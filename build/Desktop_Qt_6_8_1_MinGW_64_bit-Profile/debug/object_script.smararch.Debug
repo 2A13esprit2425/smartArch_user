@@ -1,0 +1,10 @@
+debug/home.o
+debug/main.o
+debug/login.o
+debug/register.o
+debug/qrc_ress.o
+debug/moc_databaseloader.o
+debug/moc_home.o
+debug/moc_login.o
+debug/moc_pdfexportworker.o
+debug/moc_register.o

@@ -1,0 +1,10 @@
+release/home.o
+release/main.o
+release/login.o
+release/register.o
+release/qrc_ress.o
+release/moc_databaseloader.o
+release/moc_home.o
+release/moc_login.o
+release/moc_pdfexportworker.o
+release/moc_register.o

@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>home</class>
+ <widget class="QWidget" name="home">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1465</width>
+    <height>799</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(245, 247, 250);</string>
+  </property>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>201</width>
+     <height>801</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, 
+stop:0 #4A90E2, stop:1 #6A5ACD); /* Gradient from Blue to Purple */</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Shape::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Shadow::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>180</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Admin Dashboard</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>300</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Client Management </string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>430</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Project Management</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>550</y>
+      <width>211</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Resource Management</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>20</y>
+      <width>221</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/new/prefix1/logo.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStackedWidget" name="stackedWidget">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>50</y>
+     <width>1211</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="page_3">
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>320</y>
+       <width>601</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Style the header sections */
+QHeaderView::section {
+    color: white; /* Text Color for headers */
+    background-color: #4A90E2; /* Background Color for headers */
+    font-weight: bold; /* Make header text bold */
+    font-size: 14px;
+    padding: 5px;
+}
+/* Style the table items */
+QTableWidget::item {
+    color: black; /* Ensure text color is black */
+}
+
+/* Ensure disabled items also appear black */
+QTableWidget::item:disabled {
+    color: black;
+    opacity: 1; /* Ensure full opacity */
+}
+
+
+/* Style the table items themselves */
+QTableWidget::item {
+    color: black; /* Text Color for the table items */
+}
+</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="autoScroll">
+      <bool>false</bool>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <property name="dragDropMode">
+      <enum>QAbstractItemView::DragDropMode::InternalMove</enum>
+     </property>
+     <attribute name="horizontalHeaderVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>120</number>
+     </attribute>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>New Row</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>User REF	</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Role</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Actions
+</string>
+      </property>
+     </column>
+     <item row="0" column="4">
+      <property name="text">
+       <string>Edit/Delete</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>510</x>
+       <y>270</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: #4A90E2; /* Background Color */</string>
+     </property>
+     <property name="text">
+      <string>Search</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_5">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>280</y>
+       <width>181</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+border-bottom-color: rgb(0, 0, 0);
+
+    color: black;  /* Make text color black */
+}</string>
+     </property>
+     <property name="text">
+      <string>Item to Search for </string>
+     </property>
+     <property name="clearButtonEnabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>280</y>
+       <width>121</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QComboBox {
+	color: black;  /* Make text color black */
+
+    border: 2px solid #4A90E2;  /* Blue border */
+    border-radius: 6px;         /* Optional: rounded corners */
+    padding: 5px;
+}
+QComboBox QAbstractItemView {
+    color: black; /* Make dropdown items black */
+    background: white; /* Optional: White background for dropdown */
+    selection-background-color: #4A90E2; /* Blue highlight for selected item */
+    selection-color: white; /* White text when an item is selected */
+}</string>
+     </property>
+     <property name="frame">
+      <bool>false</bool>
+     </property>
+     <item>
+      <property name="text">
+       <string>User ID</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Role</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>200</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: #4A90E2; /* Background Color */</string>
+     </property>
+     <property name="text">
+      <string>ADD USER</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_2">
+     <property name="geometry">
+      <rect>
+       <x>920</x>
+       <y>20</y>
+       <width>251</width>
+       <height>201</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/prefix1/active-user_9795151.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nbr_online">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>100</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:black</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>150</x>
+        <y>20</y>
+        <width>91</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/prefix1/imageedit_2_9987478672.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nbr_offline">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>100</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:black</string>
+      </property>
+      <property name="text">
+       <string>100</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QFrame" name="frame_4">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>50</y>
+       <width>201</width>
+       <height>100</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>113</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>ROLE</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_6">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>60</y>
+        <width>113</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>PASS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>60</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>PASS</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QListWidget" name="activityLogList">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>550</y>
+       <width>511</width>
+       <height>151</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>Logs...</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="exportpdf">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>550</y>
+       <width>111</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+image: url(:/new/prefix1/pdf.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="pathtosave">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>660</y>
+       <width>113</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="save">
+     <property name="geometry">
+      <rect>
+       <x>610</x>
+       <y>660</y>
+       <width>31</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentSave"/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>660</y>
+       <width>41</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>Path:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>700</y>
+       <width>91</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>10</pointsize>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(70, 70, 70);</string>
+     </property>
+     <property name="text">
+      <string>Compression:</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton1compressionon">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>700</y>
+       <width>51</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>ON</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton2compressionoff">
+     <property name="geometry">
+      <rect>
+       <x>590</x>
+       <y>700</y>
+       <width>61</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>OFF</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>1150</x>
+       <y>710</y>
+       <width>49</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="time">
+     <property name="geometry">
+      <rect>
+       <x>1100</x>
+       <y>710</y>
+       <width>41</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> color: black;</string>
+     </property>
+     <property name="text">
+      <string>TIME :</string>
+     </property>
+    </widget>
+    <widget class="QTableWidget" name="whitelist_table">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>580</y>
+       <width>201</width>
+       <height>121</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Style the header sections */
+QHeaderView::section {
+    color: white; /* Text Color for headers */
+    background-color: #4A90E2; /* Background Color for headers */
+    font-weight: bold; /* Make header text bold */
+    font-size: 14px;
+    padding: 5px;
+}
+/* Style the table items */
+QTableWidget::item {
+    color: black; /* Ensure text color is black */
+}
+
+/* Ensure disabled items also appear black */
+QTableWidget::item:disabled {
+    color: black;
+    opacity: 1; /* Ensure full opacity */
+}
+
+
+/* Style the table items themselves */
+QTableWidget::item {
+    color: black; /* Text Color for the table items */
+}
+</string>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="tabKeyNavigation">
+      <bool>false</bool>
+     </property>
+     <attribute name="horizontalHeaderHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderVisible">
+      <bool>false</bool>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>HWID</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Permission</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QFrame" name="frame_5">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>590</y>
+       <width>201</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLineEdit" name="hwid">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>20</y>
+        <width>113</width>
+        <height>24</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black
+</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_21">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>PASS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_22">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>20</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: black</string>
+      </property>
+      <property name="text">
+       <string>HWID</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="whitelist_user">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>670</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"> background-color: #4A90E2; /* Background Color */</string>
+     </property>
+     <property name="text">
+      <string>Whitelist User</string>
+     </property>
+     <property name="flat">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QFrame" name="frame_3">
+     <property name="geometry">
+      <rect>
+       <x>320</x>
+       <y>0</y>
+       <width>311</width>
+       <height>211</height>
+      </rect>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::Shape::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Shadow::Raised</enum>
+     </property>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>170</y>
+        <width>49</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(0, 0, 0);
+font: 900 12pt &quot;Cooper&quot;;</string>
+      </property>
+      <property name="text">
+       <string>DALI</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>30</y>
+        <width>161</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/new/prefix1/userlogo.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="widget"/>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>1261</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Orientation::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>1399</x>
+     <y>0</y>
+     <width>61</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>1330</x>
+     <y>0</y>
+     <width>61</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color:black;</string>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>stackedWidget</zorder>
+  <zorder>frame</zorder>
+  <zorder>line</zorder>
+  <zorder>pushButton_4</zorder>
+  <zorder>pushButton_5</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
